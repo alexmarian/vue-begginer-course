@@ -1,5 +1,4 @@
 <script setup>
-import {ref} from 'vue';
 
 const props = defineProps({
   name: {
@@ -23,7 +22,7 @@ const emit = defineEmits({
 
     }
 )
-function selectPlan(selectedPlan){
+function selectPlan(){
   emit("selected", props.name)
 }
 

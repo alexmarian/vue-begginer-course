@@ -22,7 +22,7 @@ function selectPlan(name) {
   selectedPlan.value = name;
 }
 
-onMounted(e => {
+onMounted(() => {
   console.log(plansRef.value);
 })
 onUnmounted(() => {

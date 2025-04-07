@@ -1,5 +1,4 @@
 <script setup>
-import PlanPicker from "@/components/PlanPicker.vue";
 import {ref} from 'vue'
 import FancyButton from "@/components/FancyButton.vue";
 
