@@ -1,2 +1,2 @@
 
-# Beginner path courses progress path
+# Beginner courses collection
