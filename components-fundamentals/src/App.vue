@@ -1,7 +1,7 @@
 <script setup>
-import CoffeePlan from "@/components/CoffeePlan.vue";
 import PlanPicker from "@/components/PlanPicker.vue";
-
+import {ref} from 'vue'
+const show = ref(true)
 </script>
 
 <template>
@@ -10,7 +10,8 @@ import PlanPicker from "@/components/PlanPicker.vue";
 
     <h2 class="subtitle">We travel the world to source the very best single origin coffee for you</h2>
 
-    <PlanPicker></PlanPicker>
+    <label><input type="checkbox" v-model="show"> Show plan picker</label>
+    <PlanPicker v-if="show"></PlanPicker>
   </div>
 </template>
 
