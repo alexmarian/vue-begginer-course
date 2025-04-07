@@ -1,19 +1,14 @@
 <script setup>
 import {ref} from 'vue'
-import FancyButton from "@/components/FancyButton.vue";
+import GithubCard from "@/components/GithubCard.vue";
 
 const show = ref(true)
 </script>
 
 <template>
-  <div class="content">
-    <FancyButton>
-      <template #icon="{hover}"  >
-        {{ hover ? '👋' : '💪' }}
-      </template>
-      Submit
-    </FancyButton>
-  </div>
+  <GithubCard username="alexmarian"/>
+  <GithubCard username="danielkellyio"/>
+  <GithubCard username="hootalex"/>
 </template>
 
 <style scoped>
