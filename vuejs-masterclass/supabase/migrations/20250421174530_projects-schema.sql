@@ -10,7 +10,7 @@ create table projects (
     id bigint primary key generated always as identity not null,
     created_at timestamptz default now() not null,
     name text not null,
-    slub text not null,
+    slug text not null,
     status current_status default 'in-progress' not null,
     collaborators text array default array[]::text[] not null
 );
